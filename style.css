@@ -1,0 +1,310 @@
+body {
+  background: hsl(218, 28%, 13%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  margin: 0px;
+}
+
+.container {
+  padding: 6vw;
+}
+
+.upper {
+  background: url(./images/bg-curvy-mobile.svg) bottom no-repeat;
+  background-color: hsl(217, 28%, 15%);
+  background-size: contain;
+}
+section {
+  margin: 10vh 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 5vh 10vw;
+}
+
+/* -----section 1------- */
+
+.logo img {
+  width: 100%;
+}
+
+.menu ul {
+  display: flex;
+
+  margin: 0px;
+}
+
+.menu ul li {
+  flex-direction: row;
+  list-style: none;
+  padding-left: 20px;
+  opacity: 70%;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+button {
+  border: 0px solid hsl(198, 60%, 50%);
+  background-image: linear-gradient(
+    100deg,
+    hsl(176, 68%, 64%),
+    hsl(198, 60%, 50%)
+  );
+  padding: 15px 6em;
+  border-radius: 40px;
+  margin: 2em 0px;
+  font-size: 1rem;
+}
+
+/* ------section 2----------- */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-size: 100%;
+}
+.intro::before {
+  content: " ";
+  position: absolute;
+  background: url(./images/bg-curvy-mobile.svg) bottom no-repeat;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.intro img {
+  max-width: 720px;
+  width: 90%;
+}
+.intro-text {
+  text-align: center;
+}
+
+.intro-text h1 {
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.intro-text p {
+  width: 95%;
+  margin: auto;
+  font-size: 0.92rem;
+  opacity: 80%;
+}
+
+/* --------section 3----------- */
+
+.features {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.feature {
+  width: 100%;
+  margin: 5vh 0px;
+}
+
+/* -----section 3-------- */
+
+.work-feature {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.work-feature img {
+  width: 100%;
+  max-width: 620px;
+}
+
+.work a {
+  color: hsl(176, 68%, 64%);
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+  padding-bottom: 5px;
+}
+
+/* -----section 4------ */
+
+.testimony {
+  display: flex;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testy {
+  background: hsl(219, 30%, 18%);
+  padding: 15px 25px;
+  margin: 20px;
+  border-radius: 8px;
+  max-width: 290px;
+}
+
+.testy p {
+  opacity: 80%;
+}
+
+.profile {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.pic {
+  width: 10%;
+  align-self: center;
+}
+.pic img {
+  border-radius: 50px;
+  width: 100%;
+}
+
+.identity {
+  padding-left: 10px;
+}
+
+.identity h4 {
+  margin: 0px;
+}
+
+.designation {
+  font-size: 0.8em;
+  margin: 5px 0px;
+  opacity: 70%;
+}
+
+/* ------section 5-------- */
+
+.access {
+  background-color: hsl(219, 30%, 18%);
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px 5vw;
+  margin: 0px auto -250px auto;
+  max-width: 864px;
+  position: relative;
+  z-index: 10;
+}
+
+.input-acess {
+  margin-top: 50px;
+}
+
+.input-acess input {
+  width: 83%;
+  max-width: 450px;
+  padding: 10px;
+  border-radius: 30px;
+  border: 0px solid white;
+}
+
+.input-acess button {
+  width: 90%;
+  max-width: 260px;
+  padding: 10px;
+  border-radius: 30px;
+  border: 0px solid white;
+}
+
+/* ----footer------ */
+
+footer {
+  background: hsl(216, 53%, 9%);
+  z-index: -1;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40vh 5vw 5vh 5vw;
+  justify-content: space-between;
+}
+
+.footer-div ul li {
+  list-style: none;
+}
+
+.footer-div ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.socials {
+  text-align: center;
+}
+
+.socials span {
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 50px;
+  margin: 5px;
+}
+
+/* -----active status--------- */
+
+@media (min-width: 720px) {
+  body {
+    font-size: 17px;
+  }
+  .intro {
+    max-width: 720px;
+    margin: auto;
+  }
+
+  .features {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .feature {
+    width: 40%;
+  }
+
+  .work-feature {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .work {
+    width: 40%;
+  }
+
+  .work h3 {
+    font-size: 2.4rem;
+    width: 80%;
+  }
+  .input-acess input {
+    margin-right: 20px;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .footer-div {
+    width: 30%;
+  }
+  .footer-menu {
+    display: flex;
+    justify-content: center;
+  }
+  .div-1 {
+    text-align: center;
+  }
+  .upper {
+    background: url(./images/bg-curvy-desktop.svg) bottom no-repeat;
+    background-color: hsl(217, 28%, 15%);
+    background-size: contain;
+  }
+}
